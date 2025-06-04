@@ -10,9 +10,7 @@ curl http://localhost:8080/
 
 Finally, let's test out some predictions. If you open the prediction.py script you can see that the inputs into the model are "game", "months", "Patch_Count", "Google_Trend_Index". We will pass these through a json formatted input through a curl POST request to the API. This is done as
 
-curl -X POST http://localhost:8080/predict \
--H "Content-Type: application/json" \
--d '{
+curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -d '{
   "game": "dota2",
   "months": 6,
   "Patch_Count": 3,
