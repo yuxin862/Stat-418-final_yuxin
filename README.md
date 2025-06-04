@@ -28,6 +28,7 @@ Google_Trends_Index - using pytrend to extract monthly search interest data from
 I finally used Avg.player(target), Patch_Count and Google_Trends_Index in my model
 
 #### Data cleaning
+
 I scrapped the data from three different place and combines them together. I want to do the Prophet model separtely, I make one csv files for each game.
 
 The data was scrapped from 2012/7/1 to 2025/5/1 for cs2 and dota2, but pubg is start from 2017/3/1 to 2025/5/1 because it is a new game comparing with cs and dota.
@@ -35,6 +36,14 @@ The data was scrapped from 2012/7/1 to 2025/5/1 for cs2 and dota2, but pubg is s
 In my model prediction, I finally choose the start date from 2021 since I want to make the prediction accurate. I did use the start date from 2012, but the predicted result for cs2 player counts is around 1 million on June 1st 2025. And the actual player counts now is 1.7 million. So the prediction result is significantly different from actual value, lead me to make the start date close to the current date and also set the changepoint scale for prophet as 1 to make it more sensitive to the trend.
 
 #### plot
+
 I made average player counts plot for the three games and use STL method that help to check trend, seasonality and residuals for three games.
+
+### Predicted result for three games after ten months
+
+The average player counts for CS2 and Pubg is still increasing in the future, but the number of players
+of Dota2 is decreasing. We can imply that in the future, less people will play moba games. And FPS and Battle Royale is still
+hot genre for games. This might support game developers in content planning.
+
 
 
