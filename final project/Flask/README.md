@@ -18,3 +18,5 @@ curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -
 }'
 
 You can change some of the values to see the prediction change. Both of the curl commands can be found in the file curl_test.sh. As usual, check to see if you have any docker containers running using docker container ls and stop them through docker componse down -v
+
+The predicted result to test it locally should be: [{"ds":"Sun, 01 Jun 2025 00:00:00 GMT","yhat":764938.1111784144},{"ds":"Tue, 01 Jul 2025 00:00:00 GMT","yhat":763882.9457529178},{"ds":"Fri, 01 Aug 2025 00:00:00 GMT","yhat":754973.0122922461},{"ds":"Mon, 01 Sep 2025 00:00:00 GMT","yhat":737951.2902569534},{"ds":"Wed, 01 Oct 2025 00:00:00 GMT","yhat":726046.6879563394},{"ds":"Sat, 01 Nov 2025 00:00:00 GMT","yhat":782779.5736652678}]
