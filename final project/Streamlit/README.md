@@ -12,5 +12,5 @@ Then it will open the streamlit app website automatically. You can select games(
 
 After that I created a image, tag it and docker push to the repositary kanelo123/streamlit-plot from dockerhub. Finally, I deploy it on the google cloud run and get the url: https://streamlit-plot-860094761515.us-west1.run.app
 
-#### Test
+####  Cloud run Test
 Since there is something wrong with my flask api prediction deployment on the google cloud run, I can not get the forecast result from the streamlit using cloudrun.
