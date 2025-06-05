@@ -10,8 +10,9 @@ The reason why I chose prophet model because:
 
 
 
-#### Data Scrapping
-Using request.get, beautifulsoup and pytrend to scrap the data from website and api
+#### Data Scrapping 
+Using request.get, beautifulsoup and pytrend to scrap the data from website and api.
+The scraping code is in
 
 #### EDA
 
