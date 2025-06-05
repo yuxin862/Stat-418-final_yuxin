@@ -1,4 +1,4 @@
-## Three popular steam games player counts prediction
+## Average player counts prediction for Top three steam games
 
 ### Description
 The data was scrapped from the Steam Charts website.(an ongoing analysis of Steam's concurrent players), SteamAPi and Google trend. I chose three popular games from steam which are Counter Strike 2, Dota2 and Pubg. These three games are different types of games(Moba, FPS and Battle Royale). Their game mode is totally different. I want to predict the average player counts of three different games using Time Series Model(Prophet), which is developed by Facebook. Finally I will compare the three predictions to get which game will be popular and better in the future.
