@@ -3,13 +3,6 @@
 ### Description
 The data was scrapped from the Steam Charts website.(an ongoing analysis of Steam's concurrent players), SteamAPi and Google trend. I chose three popular games from steam which are Counter Strike 2, Dota2 and Pubg. These three games are different types of games(Moba, FPS and Battle Royale). Their game mode is totally different. I want to predict the average player counts of three different games using Time Series Model(Prophet), which is developed by Facebook. Finally I will compare the three predictions to get which game will be popular and better in the future.
 
-The reason why I chose prophet model because:
-1. Capturing long-term trends
-2. Modeling seasonality (monthly cycles)
-3. Handling missing data or outliers gracefully
-
-
-
 ### Data Scrapping 
 Using request.get, beautifulsoup and pytrend to scrap the data from website and api.
 The scraping code is in 418 project.ipynb.
@@ -42,6 +35,18 @@ In my model prediction, I finally choose the start date from 2021 since I want t
 I made average player counts plot for the three games and use STL method that help to check trend, seasonality and residuals for three games.
 
 ### Model
+
+I used Prophet which is a time series forecasting model developed by Facebook. Prophet is a specialized model built for time-stamped data like monthly player counts.
+
+The reason why I chose prophet model because:
+1. Capturing long-term trends
+2. Modeling seasonality (monthly cycles)
+3. Handling missing data or outliers gracefully
+
+### Deployment
+
+I used flask to create the api and deployed on google cloud run. And I used streamlit to create the APP and connected with api and finally deployed on the cloud run. Even though I ran sucessfully locally,  I can not get the predicted results from cloud run due to the prophet optimizer error.
+
 
 ### Predicted result for three games after ten months
 
