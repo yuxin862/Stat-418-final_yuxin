@@ -12,9 +12,10 @@ The reason why I chose prophet model because:
 
 #### Data Scrapping 
 Using request.get, beautifulsoup and pytrend to scrap the data from website and api.
-The scraping code is in
+The scraping code is in 418 project.ipynb.
 
 #### EDA
+The EDA code is in 418 project.ipynb.
 
 ##### Variables
 Avg.players - Average players counts
